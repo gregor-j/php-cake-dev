@@ -8,6 +8,8 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * 0'  # every Sunday at 02:00 UTC
 
 env:
   REGISTRY: ghcr.io
